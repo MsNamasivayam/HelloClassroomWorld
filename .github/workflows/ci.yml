@@ -43,9 +43,9 @@ jobs:
 
       - name: Move tests into place
         run: cp hidden_tests/tests/hello_test.py .
-        
+
       - name: Debug - confirm copy worked
         run: ls -la
 
       - name: Run Tests
-        run: python3 -m unittest tests
+        run: python3 -m unittest hidden_tests
