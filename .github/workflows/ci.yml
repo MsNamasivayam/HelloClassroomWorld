@@ -1,0 +1,16 @@
+name: Testing
+on: 
+    push:
+    pull_request:
+jobs:
+    test_project:
+        runs-on: ubuntu_latest
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v3
+            
+            - name: Run Tests
+              run: python3 hello_test.py
+
+            
+
